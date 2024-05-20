@@ -18,7 +18,6 @@ import skill_img_13 from "@/assets/img/skill/ae-sm.png";
 import Image from "next/image";
 
 const skill_content = {
-  subtitle: "Advantage",
   title: "Skills & tools",
   info: "For those who know what they're looking for..",
   skill_data: [
@@ -99,7 +98,7 @@ const skill_content = {
     },
   ],
 };
-const { subtitle, title, info, skill_data } = skill_content;
+const { title, info, skill_data } = skill_content;
 
 const SkillAreaHomeOne = () => {
   useEffect(() => {
@@ -181,7 +180,6 @@ const SkillAreaHomeOne = () => {
               <div className="tp-skill-section-title">
                 <div className="tp-section-title-wrapper tp_text_anim mb-30 text-center">
                   <div className="tp-section-title-inner tp_title_anim p-relative">
-                    <span className="tp-section-subtitle">{subtitle}</span>
                     <h3 className="tp-section-title">{title}</h3>
                   </div>
                   <p>{info}</p>
