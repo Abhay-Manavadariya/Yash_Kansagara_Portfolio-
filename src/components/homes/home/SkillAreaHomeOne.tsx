@@ -130,7 +130,7 @@ const SkillAreaHomeOne = () => {
         });
       });
 
-      marker.style.display = "block";
+      // marker.style.display = "block";
 
       function anchorWidthCounter() {
         let anchorWidths = 0;
@@ -187,7 +187,7 @@ const SkillAreaHomeOne = () => {
               </div>
             </div>
           </div>
-          <div className="row">
+          {/* <div className="row">
             <div className="col-xl-12">
               <div className="tp-skill-tab tp-tab d-flex align-items-center justify-content-center mb-70">
                 <nav>
@@ -218,7 +218,7 @@ const SkillAreaHomeOne = () => {
                 </nav>
               </div>
             </div>
-          </div>
+          </div> */}
           <div className="row">
             <div className="col-xl-12">
               <div className="tab-content" id="nav-tabContent">
