@@ -5,6 +5,7 @@ import BehanceIconFooter from "@/svg/home/FooterIcons/BehanceIconFooter";
 import GoogleIconFooter from "@/svg/home/FooterIcons/GoogleIconFooter";
 import InstagramIconFooter from "@/svg/home/FooterIcons/InstagramIconFooter";
 import Link from "next/link";
+import HeroEmailIcon from "@/svg/home/HeroIcons/HeroEmailIcon";
 
 interface DataType {
   title: string;
@@ -15,6 +16,7 @@ interface DataType {
     id: number;
     name: string;
     user_name: string;
+    link: string;
     icon: React.JSX.Element;
   }[];
 }
@@ -32,20 +34,23 @@ const footer_content: DataType = {
     {
       id: 1,
       name: "Behance",
-      user_name: "@diego_des",
+      user_name: "",
       icon: <BehanceIconFooter />,
+      link: "",
     },
     {
       id: 2,
       name: "Google",
-      user_name: "@diego_des",
+      user_name: "",
       icon: <GoogleIconFooter />,
+      link: "",
     },
     {
       id: 3,
-      name: "Instagram",
-      user_name: "@diego_des",
-      icon: <InstagramIconFooter />,
+      name: "Email",
+      user_name: "",
+      icon: <HeroEmailIcon />,
+      link: "https://mail.google.com/mail/?view=cm&fs=1&to=mr.zenzee8@gmail.com",
     },
   ],
 };
@@ -159,12 +164,12 @@ const FooterOne = ({ style }: any) => {
                     className="col-xl-4 col-lg-4 col-md-6"
                     style={{ marginBottom: "30px" }}
                   >
-                    <a href="#">
+                    <a href={item.link} target="_blank">
                       <div className="tp-footer-social-item d-flex align-items-center justify-content-between">
                         <span className="tp-footer-anim-border"></span>
                         <div className="tp-footer-social-text z-index-1">
                           <span className="child-1">{item.name}</span>
-                          <span className="child-2">{item.user_name}</span>
+                          {/* <span classNa;;p[me="child-2">{item.user_name}</span> */}
                         </div>
                         <div className="tp-footer-social-icon z-index-1">
                           <span>{item.icon}</span>

@@ -37,7 +37,7 @@ const footer_content: DataType = {
     {
       id: 1,
       cls: "gmail",
-      link: "https://mail.google.com",
+      link: "https://mail.google.com/mail/?view=cm&fs=1&to=mr.zenzee8@gmail.com",
       icon: <HeroEmailIcon />,
     },
     {
@@ -52,12 +52,12 @@ const footer_content: DataType = {
       link: "https://www.behance.net",
       icon: <HeroBehanceIcon />,
     },
-    {
-      id: 4,
-      cls: "youtube",
-      link: "https://www.youtube.com",
-      icon: <YoutubeIconHeorAreaHomeTwo />,
-    },
+    // {
+    //   id: 4,
+    //   cls: "youtube",
+    //   link: "https://www.youtube.com",
+    //   icon: <YoutubeIconHeorAreaHomeTwo />,
+    // },
   ],
   links: [
     { title: "About", link: "/about" },
@@ -67,12 +67,12 @@ const footer_content: DataType = {
   ],
   address: (
     <>
-      California <span></span> <br /> 987 Design Blvd, Suite 543, Beverly Hills,
-      CA 902
+      303-RK Empire, 150 Feet Ring Road, Near Mavdi Circle, Rajkot, Gujrat -
+      3620004, India.
     </>
   ),
-  email: "hello@youremail.com",
-  phone: "+1(789) 8001234",
+  email: "mr.zenzee8@gmail.com",
+  phone: "",
 };
 
 const { sm_info, social_links, links, address, email, phone } = footer_content;
@@ -140,7 +140,12 @@ const FooterFour = () => {
                   <div className="tp-footer-4__widget footer-col-4-4">
                     <h4 className="tp-footer-4__widget-title">Say Hello</h4>
                     <div className="tp-footer-4__widget-mail">
-                      <a href={`mailto:${email}`}>{email}</a>
+                      <a
+                        href="https://mail.google.com/mail/?view=cm&fs=1&to=mr.zenzee8@gmail.com"
+                        target="_blank"
+                      >
+                        {email}
+                      </a>
                     </div>
                     <div className="tp-footer-4__widget-mail">
                       <a href={`tel:${phone}`}>{phone}</a>
