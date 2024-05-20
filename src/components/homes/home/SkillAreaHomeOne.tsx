@@ -7,7 +7,7 @@ import skill_img_3 from "@/assets/img/skill/nodejs.png";
 import skill_img_4 from "@/assets/img/skill/html.png";
 import skill_img_5 from "@/assets/img/skill/webflow.png";
 import skill_img_6 from "@/assets/img/skill/vue.png";
-
+import Count from "@/components/common/Count";
 import skill_img_7 from "@/assets/img/skill/figma.png";
 import skill_img_8 from "@/assets/img/skill/sketch.png";
 import skill_img_9 from "@/assets/img/skill/photoshop.png";
@@ -253,8 +253,14 @@ const SkillAreaHomeOne = () => {
                                     />
                                   </span>
                                 </div>
-                                <h3 className="tp-skill-count">
-                                  <span>{inner_item.percent}</span>%
+                                <h3
+                                  className="tp-skill-count"
+                                  style={{ display: "flex" }}
+                                >
+                                  <span>
+                                    <Count number={inner_item.percent} />
+                                  </span>
+                                  %
                                 </h3>
                               </div>
                               <div className="tp-skill-content">

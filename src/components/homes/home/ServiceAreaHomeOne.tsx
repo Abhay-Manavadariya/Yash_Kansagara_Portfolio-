@@ -43,7 +43,7 @@ const service_content = {
       tab_id: "Four",
       question: "Website Design",
       answer:
-        "Get a website that doesn't just look nice. Its a conversion powerhouse--designed to turn casual visitors into paying customers. From seamless navigation, bold layouts, irresistible calls-to-action, and an intuitive user journey, every element is meticulously designed to enhance user engagement and drive business growth",
+        "Get a website that doesn't just look nice. Its a conversion powerhouse--designed to turn casual visitors into paying customers. From seamless navigation, bold layouts, irresistible calls-to-action, and an intuitive user journey, every element is meticulously designed to enhance user engagement and drive business growth.",
       some_features: [],
     },
   ],
