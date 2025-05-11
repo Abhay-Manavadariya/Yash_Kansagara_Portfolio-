@@ -152,18 +152,18 @@ const HeroAreaHome = () => {
             <div className="col-xl-5 col-lg-5 col-md-12">
               <div className="tp-hero-thumb-wrapper text-center text-lg-end p-relative z-index-1">
                 <div className="tp-hero-thumb-shape">
-                  <Image
+                  {/* <Image
                     className="tp-hero-thumb-shape-1"
                     data-speed="1.4"
                     src={HeroShape1}
                     alt="diego-image"
-                  />
-                  <Image
+                  /> */}
+                  {/* <Image
                     className="tp-hero-thumb-shape-2 d-none d-xl-block"
                     data-speed="1.2"
                     src={HeroShape2}
                     alt="diego-image"
-                  />
+                  /> */}
                   <span className="tp-hero-thumb-shape-3"></span>
                 </div>
                 <div className="tp-hero-thumb">

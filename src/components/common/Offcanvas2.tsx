@@ -135,7 +135,7 @@ const Offcanvas2 = ({ showCanvas, setShowCanvas }: any) => {
                 </li>
               </ul>
             </div>
-            <div className="tp-offcanvas-social-2">
+            {/* <div className="tp-offcanvas-social-2">
               <h3 className="tp-offcanvas-contact-title-2">Follow Us</h3>
               <ul>
                 <li>
@@ -229,7 +229,7 @@ const Offcanvas2 = ({ showCanvas, setShowCanvas }: any) => {
                   </a>
                 </li>
               </ul>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

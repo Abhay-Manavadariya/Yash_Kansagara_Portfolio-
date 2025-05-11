@@ -24,9 +24,10 @@ const schema = yup
   .required();
 
 const budget_categorys = [
+  { id: "less_than_5k", title: "< 5k" },
+  { id: "5_10k", title: "5-10k" },
   { id: "10_20k", title: "10-20k" },
-  { id: "30_40k", title: "30-40k" },
-  { id: "40_50k", title: "40-50k" },
+  { id: "20_50k", title: "20-50k" },
   { id: "50_100k", title: "50-100k" },
   { id: "greater_than_100k", title: "> 100k" },
 ];
@@ -103,6 +104,8 @@ const ContactForm = () => {
   const handleItemClick = (index: number) => {
     setActiveCategory(index);
   };
+
+  const selectHandler = (e: any) => {};
 
   return (
     <>

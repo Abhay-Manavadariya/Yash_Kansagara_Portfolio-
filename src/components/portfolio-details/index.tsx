@@ -1,16 +1,14 @@
-
-import React from 'react';
-import HeaderFour from '@/layouts/headers/HeaderFour';
-import HeroPortfolioDetailsArea from './HeroPortfolioDetailsArea';
-import PortfolioAboutArea from './PortfolioAboutArea';
-import PortfolioDetailsArea from './PortfolioDetailsArea';
-import FooterOne from '@/layouts/footers/FooterOne';
-
+import React from "react";
+import HeaderOne from "@/layouts/headers/HeaderOne";
+import HeroPortfolioDetailsArea from "./HeroPortfolioDetailsArea";
+import PortfolioAboutArea from "./PortfolioAboutArea";
+import PortfolioDetailsArea from "./PortfolioDetailsArea";
+import FooterOne from "@/layouts/footers/FooterOne";
 
 const PortfolioDetails = () => {
   return (
     <>
-      <HeaderFour style={true} />
+      <HeaderOne />
       <div id="smooth-wrapper">
         <div id="smooth-content">
           <main>

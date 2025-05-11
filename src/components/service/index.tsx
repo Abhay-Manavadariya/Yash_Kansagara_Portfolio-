@@ -20,7 +20,7 @@ const Service = () => {
             <ServiceAreaHomeThree style={true} />
             <ServiceInfoArea />
             <TestimonialAreaHomeOne style={true} />
-            <PriceAreaHomeOne style={true} />
+            {/* <PriceAreaHomeOne style={true} /> */}
             {/* <BrandAreaAbout /> */}
           </main>
           <FooterOne style={true} />

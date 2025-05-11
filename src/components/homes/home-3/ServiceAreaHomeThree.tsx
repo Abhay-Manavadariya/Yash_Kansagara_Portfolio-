@@ -41,14 +41,14 @@ const service_content: DataType = {
   ),
   btn_text: (
     <>
-      Call me to get more extra service{" "}
+      Feel free to{" "}
       <span
         style={{
           color: "black",
           fontWeight: "bold",
         }}
       >
-        Call Now
+        get in touch
       </span>
     </>
   ),

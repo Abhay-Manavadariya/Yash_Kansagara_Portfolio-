@@ -40,18 +40,18 @@ const footer_content: DataType = {
     },
     {
       id: 2,
-      name: "Google",
-      user_name: "",
-      icon: <GoogleIconFooter />,
-      link: "",
-    },
-    {
-      id: 3,
       name: "Email",
       user_name: "",
       icon: <HeroEmailIcon />,
       link: "https://mail.google.com/mail/?view=cm&fs=1&to=mr.zenzee8@gmail.com",
     },
+    // {
+    //   id: 2,
+    //   name: "Google",
+    //   user_name: "",
+    //   icon: <GoogleIconFooter />,
+    //   link: "",
+    // },
   ],
 };
 
@@ -108,14 +108,14 @@ const FooterOne = ({ style }: any) => {
                       <div className="tp-footer-btn text-center">
                         <Link className="tp-btn-white-xl w-100" href="/contact">
                           <div>
-                            <span>Discuss Project</span>
+                            <span>{btn_text_2}</span>
                           </div>
                         </Link>
                       </div>
                     </div>
                     <div className="col-xl-6 col-lg-6 col-md-6">
                       <div className="tp-footer-btn text-center">
-                        <a
+                        {/* <a
                           className="tp-btn-grey-xl w-100"
                           target="_blank"
                           href="https://forms.gle/H3mycp9tU6URvp2h6"
@@ -123,7 +123,12 @@ const FooterOne = ({ style }: any) => {
                           <div>
                             <span>Send project requirements</span>
                           </div>
-                        </a>
+                        </a> */}
+                        <Link className="tp-btn-green w-100" href="/contact">
+                          <div>
+                            <span>{btn_text_1}</span>
+                          </div>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -142,7 +147,7 @@ const FooterOne = ({ style }: any) => {
                     </div>
                     <div className="col-xl-6 col-lg-6 col-md-6">
                       <div className="tp-footer-btn text-center ">
-                        <a
+                        {/* <a
                           className="tp-btn-green w-100"
                           target="_blank"
                           href="https://forms.gle/H3mycp9tU6URvp2h6"
@@ -150,14 +155,19 @@ const FooterOne = ({ style }: any) => {
                           <div>
                             <span>{btn_text_1}</span>
                           </div>
-                        </a>
+                        </a> */}
+                        <Link className="tp-btn-green w-100" href="/contact">
+                          <div>
+                            <span>{btn_text_1}</span>
+                          </div>
+                        </Link>
                       </div>
                     </div>
                   </div>
                 </div>
               )}
 
-              <div className="row gx-50">
+              <div className="row gx-50" style={{ justifyContent: "center" }}>
                 {footer_data.map((item, index) => (
                   <div
                     key={index}
